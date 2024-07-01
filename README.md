@@ -32,12 +32,17 @@ Logistic Regression provided a good balance of performance and efficiency, demon
 **Winners:** SVM would be the best model to use if computational time is not a concern, but Logistic Regression would be a more practical choice for a balance of performance and efficiency.
 
 #### Model Performance Comparison
+![Model Accuracy](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/final_accuracy_comparison.png)
 
-![Model Percision Comparison](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/models_precision_comparison.png)
+![Model Precision](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/final_precision_comparison.png)
 
-#### Confusion Matrix (SVM)
+![ROC Curves](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/roc_curves.png)
+
+![Feature Importance](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/feature_importances_Decision%20Tree.png)
 
 ![Confusion Matrix for SVM](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/confusion_matrix_SVM.png)
+
+![Model Percision Comparison](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/models_precision_comparison.png)
 
 #### Next Steps and Recommendations: 
 * Feature Testing: Further test using a different number of features to see how it affects model performance.
