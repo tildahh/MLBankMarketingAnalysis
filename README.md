@@ -4,8 +4,6 @@ We evaluated four different classification models on a dataset from a Portuguese
 
 The best performance metrics of these models will be Precision since it's a highly imbalanced dataset and it will give us the best result for the customers that will subscribe. 
 
-The data is related with direct marketing campaigns of a Portuguese banking institution, found at the [[UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing)]. The marketing campaigns were based on phone calls and we will build a model that predict how likely clients will subscribe to a bank term deposit. More information on the original study can be found [here](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/CRISP-DM-BANK.pdf)
-
 ### Business Problem
 
 The primary business problem is to improve the efficiency of the bank's marketing campaigns by accurately predicting which customers will subscribe to a term deposit. This will enable the bank to:
@@ -14,15 +12,10 @@ The primary business problem is to improve the efficiency of the bank's marketin
 - **Reduce costs**: Fewer calls will be needed to achieve the same number of successful subscriptions.
 - **Improve customer experience**: By reducing unnecessary calls, customer satisfaction can be enhanced.
 
+### The Data 
+The data is related with direct marketing campaigns of a Portuguese banking institution, found at the [[UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/222/bank+marketing)]. The marketing campaigns were based on phone calls and we will build a model that predict how likely clients will subscribe to a bank term deposit. More information on the original study can be found [here.](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/CRISP-DM-BANK.pdf)
+
 ### Findings 
-KNN had the lowest performance among the models, indicating potential overfitting and lower precision, making it less reliable for this dataset.
-
-**SVM demonstrated the highest performance in terms of accuracy and precision but required significantly more computational time for training.**
-
-Logistic Regression provided a good balance of performance and efficiency, demonstrating high accuracy and precision with a relatively quick training time. 
-
-**Winners:** SVM would be the best model to use if computational time is not a concern, but Logistic Regression would be a more practical choice for a balance of performance and efficiency.
- 
 | Model               | Train Time | Train Accuracy | Test Accuracy | Train Precision | Test Precision |
 | ------------------- | ---------- | -------------- | ------------- | --------------- | -------------- |
 | Logistic Regression | 0.045924   | 0.896080       | 0.899719      | 0.689189        | 0.722408       |
@@ -30,14 +23,21 @@ Logistic Regression provided a good balance of performance and efficiency, demon
 | Decision Tree       | 0.011317   | 0.902906       | 0.893085      | 0.713612        | 0.602532       |
 | SVM                 | 50.877737  | 0.894963       | 0.898061      | 0.695035        | 0.727273       |
 
+KNN had the lowest performance among the models, indicating potential overfitting and lower precision, making it less reliable for this dataset.
+
+**SVM demonstrated the highest performance in terms of accuracy and precision but required significantly more computational time for training.**
+
+Logistic Regression provided a good balance of performance and efficiency, demonstrating high accuracy and precision with a relatively quick training time. 
+
+**Winners:** SVM would be the best model to use if computational time is not a concern, but Logistic Regression would be a more practical choice for a balance of performance and efficiency.
 
 #### Model Performance Comparison
 
-![Model Percision Comparison]([https://models_precision_comparison.com](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/models_precision_comparison.png))
+![Model Percision Comparison](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/models_precision_comparison.png)
 
 #### Confusion Matrix (SVM)
 
-![Confusion Matrix for SVM]([https://confusion_matrix_SVM.com](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/confusion_matrix_SVM.png))
+![Confusion Matrix for SVM](https://github.com/tildahh/MLBankMarketingAnalysis/blob/main/images/confusion_matrix_SVM.png)
 
 #### Next Steps and Recommendations: 
 * Feature Testing: Further test using a different number of features to see how it affects model performance.
